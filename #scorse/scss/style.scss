@@ -1166,6 +1166,12 @@ body {
 }
 
 @media (max-width: 930px) {
+  .registration li {
+    padding: 0 5px;
+  }
+  .registration::before {
+    padding: 0;
+  }
   .what_we_do__row {
     flex-wrap: wrap;
   }
@@ -1175,7 +1181,7 @@ body {
   }
 
   .what_we_do {
-    padding: 96px 0 85px;
+    padding: 96px 0 125px;
   }
   .futures {
     margin: -430px 0 182px;
@@ -1206,4 +1212,7 @@ body {
     padding: 63px 0 46px;
     margin: 110px 0 0;
   }
+}
+
+@media (max-width: 900px) {
 }
