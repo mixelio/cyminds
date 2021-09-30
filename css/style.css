@@ -902,6 +902,10 @@ body._lock {
   margin: 0 30px;
 }
 
+.our_mission__main_image {
+  width: 100%;
+}
+
 .our_mission__pre_title {
   text-align: left;
 }
@@ -1532,10 +1536,6 @@ body._lock {
 
   .our_task .container {
     z-index: 1;
-  }
-
-  .our__mission img {
-    width: 100%;
   }
 }
 @media (max-width: 500px) {

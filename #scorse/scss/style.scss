@@ -763,6 +763,10 @@ body {
   margin: 0 30px;
 }
 
+.our_mission__main_image {
+  width: 100%;
+}
+
 .our_mission__pre_title {
   text-align: left;
 }
@@ -1405,9 +1409,6 @@ body {
     z-index: 1;
   }
   .our__mission {
-    img {
-      width: 100%;
-    }
   }
 }
 
