@@ -4,6 +4,9 @@
 
 body {
   font-family: Montserrat;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 .menu__icon {
@@ -90,6 +93,10 @@ body {
 }
 
 .burger__navigation__list {
+}
+
+.burger__registration {
+  display: none;
 }
 
 .header {
@@ -1393,5 +1400,53 @@ body {
   .futures__item {
     flex: 0 1 42%;
     padding: 20px 5px 17px;
+  }
+  .our_task .container {
+    z-index: 1;
+  }
+  .our__mission {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header__option__item {
+    &:first-child {
+      border-right: none;
+    }
+  }
+  .select_lang {
+    right: 50%;
+  }
+  .header__registration {
+    display: none;
+  }
+  .burger__registration {
+    display: block;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin: 0;
+    }
+  }
+  .menu__icon {
+    right: 0;
+  }
+  .futures {
+    margin: -800px 0 182px;
+  }
+  .futures__row {
+    flex-direction: column;
+  }
+  .futures {
+    padding-bottom: 520px;
+  }
+  .what_we_do__row {
+    flex-direction: column;
   }
 }
