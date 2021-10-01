@@ -923,9 +923,15 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .our_mission__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   margin: 0 30px;
 }
 
@@ -959,21 +965,15 @@ body._lock {
 }
 
 .spoller__text {
+  overflow: hidden;
+  display: none;
   padding: 20px 0 0;
   font-size: 14px;
   line-height: 17px;
   color: #333333;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-.spoller__text._open {
-  position: relative;
-  -webkit-transform: translateY(0%) scaleY(1);
-          transform: translateY(0%) scaleY(1);
-  visibility: visible;
 }
 
-.spoller_title {
+.spoller__title {
   padding: 18px 50px;
   width: 100%;
   text-align: left;
@@ -985,7 +985,7 @@ body._lock {
   color: #eaa124;
   position: relative;
 }
-.spoller_title:before {
+.spoller__title:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -996,7 +996,7 @@ body._lock {
   z-index: 0;
   background: url("../img/talking-people-1.svg") 0 0/contain no-repeat;
 }
-.spoller_title:after {
+.spoller__title:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -1007,10 +1007,15 @@ body._lock {
   z-index: 0;
   background: url("../img/spoller-arrow.svg") 0 0/contain no-repeat;
 }
-.spoller_title._active {
+.spoller__title.active__item {
   border-bottom: 1px solid #eee;
 }
-.spoller_title._active:after {
+.spoller__title.active__item:after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.active__item .spoller__title:after {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
