@@ -1451,6 +1451,20 @@ body._lock {
     display: block;
   }
 
+  .our_task__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .our_task .title {
+    max-width: auto;
+  }
+
+  .our_task__images {
+    display: none;
+  }
+
   .our_mission__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1460,6 +1474,10 @@ body._lock {
 
   .our_mission__item:first-child {
     margin: 0 30px 20px;
+  }
+
+  .our_mission__main_image {
+    width: 0;
   }
 }
 @media (max-width: 700px) {
