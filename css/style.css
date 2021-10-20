@@ -974,7 +974,7 @@ body._lock {
 }
 
 .spoller__title {
-  padding: 18px 50px;
+  padding: 18px 70px;
   width: 100%;
   text-align: left;
   background-color: #fff;
@@ -994,7 +994,6 @@ body._lock {
   top: calc(50% - 20px);
   left: 0;
   z-index: 0;
-  background: url("../img/talking-people-1.svg") 0 0/contain no-repeat;
 }
 .spoller__title:after {
   content: "";
@@ -1013,6 +1012,26 @@ body._lock {
 .spoller__title.active__item:after {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+}
+
+.spoller__title_1 {
+  background: url("../img/talking-people-1.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_2 {
+  background: url("../img/talking-people-2.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_3 {
+  background: url("../img/talking-people-3.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_4 {
+  background: url("../img/talking-people-4.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_5 {
+  background: url("../img/talking-people-5.svg") 0 0/contain no-repeat;
 }
 
 .active__item .spoller__title:after {
@@ -1118,7 +1137,7 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .blog__slider .slick-dots {
   display: -ms-flex;
